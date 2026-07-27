@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "started_at": "2026-07-27T22:15:30Z",
-  "generated_at": "2026-07-27T22:15:31Z",
+  "started_at": "2026-07-27T22:17:18Z",
+  "generated_at": "2026-07-27T22:17:19Z",
   "holder_aggregation": "sum_across_chains",
   "run_status": "partial",
   "source_errors": [
@@ -63,11 +63,11 @@
           "holders": 1,
           "source": "XRPL public JSON-RPC (XRPLCluster)",
           "reference": "rUNaS5sqRuxZz6V7rBGhoSaZiVYA3ut4UL:EURCV",
-          "observed_at": "2026-07-27T22:15:30Z",
+          "observed_at": "2026-07-27T22:17:18Z",
           "status": "fresh",
           "details": {
             "method": "account_lines",
-            "ledger": "6311310C0B862810A639048F440A80257FC7B05AD88890A2B8461BDDE376BD0E",
+            "ledger": "6F57B7BE55027E50833C4725DC04D1E47DA7EBC35912329D92EF37DC633CF3EC",
             "pages": 1,
             "holder_rule": "issuer-side balance < 0"
           }
@@ -78,7 +78,7 @@
           "holders": 4,
           "source": "Stellar Horizon (SDF mainnet)",
           "reference": "EURCV:GCEYGIVOLAVBF2TG2RUSGTUJCIN75KEX3NGLMY4VPL4GFE5L355AXW3G",
-          "observed_at": "2026-07-27T22:15:31Z",
+          "observed_at": "2026-07-27T22:17:19Z",
           "status": "fresh",
           "details": {
             "asset_method": "GET /assets",
