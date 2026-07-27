@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Supply, holders et capitalisation nominale historique de EURCV et USDCV."
+    />
+    <title>CoinVertible — Stablecoin Dashboard</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js" defer></script>
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">CoinVertible · données on-chain</p>
+          <h1>Stablecoin Dashboard</h1>
+          <p class="intro">
+            Holders actuels, supply courante et capitalisation nominale historique,
+            sans conversion de devises.
+          </p>
+        </div>
+        <div class="status" aria-live="polite">
+          <span class="status-dot"></span>
+          <span id="last-update">Chargement des données…</span>
+        </div>
+      </header>
+
+      <main>
+        <div id="dashboard" class="token-grid" aria-live="polite"></div>
+        <div id="error" class="error" hidden></div>
+
+        <aside class="method-note">
+          <strong>Méthode.</strong> Les holders sont additionnés entre chaînes : une même
+          entité présente sur plusieurs réseaux peut donc être comptée plusieurs fois. La
+          capitalisation affichée est nominale : elle correspond à la supply dans la
+          devise d'ancrage du token, sans taux de change ni prix de marché externe.
+        </aside>
+      </main>
+
+      <footer>
+        Sources autorisées : Etherscan, Solscan, XRP Ledger JSON-RPC et Stellar Horizon.
+      </footer>
+    </div>
+  </body>
+</html>
