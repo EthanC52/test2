@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.env
+.venv/
+venv/
+.DS_Store
+.legacy-backup/
+.claude/
+
+_site/
+
