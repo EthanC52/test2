@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "started_at": "2026-07-27T22:17:18Z",
-  "generated_at": "2026-07-27T22:17:19Z",
+  "started_at": "2026-07-27T22:19:55Z",
+  "generated_at": "2026-07-27T22:20:15Z",
   "holder_aggregation": "sum_across_chains",
   "run_status": "partial",
   "source_errors": [
@@ -9,25 +9,13 @@
       "token": "eurcv",
       "chain": "ethereum",
       "provider": "etherscan",
-      "error": "ProviderError: Missing required environment variable: ETHERSCAN_API_KEY"
-    },
-    {
-      "token": "eurcv",
-      "chain": "solana",
-      "provider": "solscan",
-      "error": "ProviderError: Missing required environment variable: SOLSCAN_API_KEY"
+      "error": "ProviderError: Etherscan API error: Result window is too large, PageNo x Offset size must be less than or equal to 10000 None"
     },
     {
       "token": "usdcv",
       "chain": "ethereum",
       "provider": "etherscan",
-      "error": "ProviderError: Missing required environment variable: ETHERSCAN_API_KEY"
-    },
-    {
-      "token": "usdcv",
-      "chain": "solana",
-      "provider": "solscan",
-      "error": "ProviderError: Missing required environment variable: SOLSCAN_API_KEY"
+      "error": "ProviderError: Etherscan API error: Result window is too large, PageNo x Offset size must be less than or equal to 10000 None"
     }
   ],
   "tokens": {
@@ -36,38 +24,49 @@
       "symbol": "EURCV",
       "currency": "EUR",
       "status": "partial",
-      "supply": "25030600",
-      "holders": 5,
+      "supply": "26086743.68",
+      "holders": 19,
       "largest_holder_chain": {
-        "id": "stellar",
-        "label": "Stellar",
-        "holders": 4,
+        "id": "solana",
+        "label": "Solana",
+        "holders": 14,
         "status": "fresh"
       },
-      "fresh_chain_count": 2,
+      "fresh_chain_count": 3,
       "stale_chain_count": 0,
       "configured_chain_count": 4,
       "history_ready": false,
       "missing_chains": [
-        "ethereum",
-        "solana"
+        "ethereum"
       ],
       "errors": {
-        "ethereum": "ProviderError: Missing required environment variable: ETHERSCAN_API_KEY",
-        "solana": "ProviderError: Missing required environment variable: SOLSCAN_API_KEY"
+        "ethereum": "ProviderError: Etherscan API error: Result window is too large, PageNo x Offset size must be less than or equal to 10000 None"
       },
       "chains": {
+        "solana": {
+          "label": "Solana",
+          "supply": "1056143.68",
+          "holders": 14,
+          "source": "Solscan API Playground (Free tier)",
+          "reference": "DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
+          "observed_at": "2026-07-27T22:20:05Z",
+          "status": "fresh",
+          "details": {
+            "method": "playground/token/meta",
+            "decimals": 2
+          }
+        },
         "xrpl": {
           "label": "XRP Ledger",
           "supply": "10000000",
           "holders": 1,
           "source": "XRPL public JSON-RPC (XRPLCluster)",
           "reference": "rUNaS5sqRuxZz6V7rBGhoSaZiVYA3ut4UL:EURCV",
-          "observed_at": "2026-07-27T22:17:18Z",
+          "observed_at": "2026-07-27T22:20:05Z",
           "status": "fresh",
           "details": {
             "method": "account_lines",
-            "ledger": "6F57B7BE55027E50833C4725DC04D1E47DA7EBC35912329D92EF37DC633CF3EC",
+            "ledger": "86ADA7BD7BD64AB0F30BCC95FAB7DFBB20787A630DD797F048490D76B42E20EF",
             "pages": 1,
             "holder_rule": "issuer-side balance < 0"
           }
@@ -78,7 +77,7 @@
           "holders": 4,
           "source": "Stellar Horizon (SDF mainnet)",
           "reference": "EURCV:GCEYGIVOLAVBF2TG2RUSGTUJCIN75KEX3NGLMY4VPL4GFE5L355AXW3G",
-          "observed_at": "2026-07-27T22:17:19Z",
+          "observed_at": "2026-07-27T22:20:06Z",
           "status": "fresh",
           "details": {
             "asset_method": "GET /assets",
@@ -97,23 +96,40 @@
       "name": "USD CoinVertible",
       "symbol": "USDCV",
       "currency": "USD",
-      "status": "unavailable",
-      "supply": null,
-      "holders": null,
-      "largest_holder_chain": null,
-      "fresh_chain_count": 0,
+      "status": "partial",
+      "supply": "1989380",
+      "holders": 13,
+      "largest_holder_chain": {
+        "id": "solana",
+        "label": "Solana",
+        "holders": 13,
+        "status": "fresh"
+      },
+      "fresh_chain_count": 1,
       "stale_chain_count": 0,
       "configured_chain_count": 2,
       "history_ready": false,
       "missing_chains": [
-        "ethereum",
-        "solana"
+        "ethereum"
       ],
       "errors": {
-        "ethereum": "ProviderError: Missing required environment variable: ETHERSCAN_API_KEY",
-        "solana": "ProviderError: Missing required environment variable: SOLSCAN_API_KEY"
+        "ethereum": "ProviderError: Etherscan API error: Result window is too large, PageNo x Offset size must be less than or equal to 10000 None"
       },
-      "chains": {}
+      "chains": {
+        "solana": {
+          "label": "Solana",
+          "supply": "1989380",
+          "holders": 13,
+          "source": "Solscan API Playground (Free tier)",
+          "reference": "8smindLdDuySY6i2bStQX9o8DVhALCXCMbNxD98unx35",
+          "observed_at": "2026-07-27T22:20:15Z",
+          "status": "fresh",
+          "details": {
+            "method": "playground/token/meta",
+            "decimals": 2
+          }
+        }
+      }
     }
   }
 }
