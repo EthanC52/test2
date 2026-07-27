@@ -1,0 +1,119 @@
+{
+  "schema_version": 2,
+  "started_at": "2026-07-27T22:15:30Z",
+  "generated_at": "2026-07-27T22:15:31Z",
+  "holder_aggregation": "sum_across_chains",
+  "run_status": "partial",
+  "source_errors": [
+    {
+      "token": "eurcv",
+      "chain": "ethereum",
+      "provider": "etherscan",
+      "error": "ProviderError: Missing required environment variable: ETHERSCAN_API_KEY"
+    },
+    {
+      "token": "eurcv",
+      "chain": "solana",
+      "provider": "solscan",
+      "error": "ProviderError: Missing required environment variable: SOLSCAN_API_KEY"
+    },
+    {
+      "token": "usdcv",
+      "chain": "ethereum",
+      "provider": "etherscan",
+      "error": "ProviderError: Missing required environment variable: ETHERSCAN_API_KEY"
+    },
+    {
+      "token": "usdcv",
+      "chain": "solana",
+      "provider": "solscan",
+      "error": "ProviderError: Missing required environment variable: SOLSCAN_API_KEY"
+    }
+  ],
+  "tokens": {
+    "eurcv": {
+      "name": "EUR CoinVertible",
+      "symbol": "EURCV",
+      "currency": "EUR",
+      "status": "partial",
+      "supply": "25030600",
+      "holders": 5,
+      "largest_holder_chain": {
+        "id": "stellar",
+        "label": "Stellar",
+        "holders": 4,
+        "status": "fresh"
+      },
+      "fresh_chain_count": 2,
+      "stale_chain_count": 0,
+      "configured_chain_count": 4,
+      "history_ready": false,
+      "missing_chains": [
+        "ethereum",
+        "solana"
+      ],
+      "errors": {
+        "ethereum": "ProviderError: Missing required environment variable: ETHERSCAN_API_KEY",
+        "solana": "ProviderError: Missing required environment variable: SOLSCAN_API_KEY"
+      },
+      "chains": {
+        "xrpl": {
+          "label": "XRP Ledger",
+          "supply": "10000000",
+          "holders": 1,
+          "source": "XRPL public JSON-RPC (XRPLCluster)",
+          "reference": "rUNaS5sqRuxZz6V7rBGhoSaZiVYA3ut4UL:EURCV",
+          "observed_at": "2026-07-27T22:15:30Z",
+          "status": "fresh",
+          "details": {
+            "method": "account_lines",
+            "ledger": "6311310C0B862810A639048F440A80257FC7B05AD88890A2B8461BDDE376BD0E",
+            "pages": 1,
+            "holder_rule": "issuer-side balance < 0"
+          }
+        },
+        "stellar": {
+          "label": "Stellar",
+          "supply": "15030600",
+          "holders": 4,
+          "source": "Stellar Horizon (SDF mainnet)",
+          "reference": "EURCV:GCEYGIVOLAVBF2TG2RUSGTUJCIN75KEX3NGLMY4VPL4GFE5L355AXW3G",
+          "observed_at": "2026-07-27T22:15:31Z",
+          "status": "fresh",
+          "details": {
+            "asset_method": "GET /assets",
+            "account_holder_method": "GET /accounts?asset=...",
+            "ledger_range": null,
+            "classic_account_holders": 4,
+            "contract_holders": 0,
+            "liquidity_pool_holders": 0,
+            "claimable_balances_in_supply": true,
+            "claimable_balances_in_holder_count": false
+          }
+        }
+      }
+    },
+    "usdcv": {
+      "name": "USD CoinVertible",
+      "symbol": "USDCV",
+      "currency": "USD",
+      "status": "unavailable",
+      "supply": null,
+      "holders": null,
+      "largest_holder_chain": null,
+      "fresh_chain_count": 0,
+      "stale_chain_count": 0,
+      "configured_chain_count": 2,
+      "history_ready": false,
+      "missing_chains": [
+        "ethereum",
+        "solana"
+      ],
+      "errors": {
+        "ethereum": "ProviderError: Missing required environment variable: ETHERSCAN_API_KEY",
+        "solana": "ProviderError: Missing required environment variable: SOLSCAN_API_KEY"
+      },
+      "chains": {}
+    }
+  }
+}
