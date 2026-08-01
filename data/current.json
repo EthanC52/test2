@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "started_at": "2026-08-01T21:05:06Z",
-  "generated_at": "2026-08-01T21:05:24Z",
+  "started_at": "2026-08-01T22:07:02Z",
+  "generated_at": "2026-08-01T22:07:22Z",
   "holder_aggregation": "sum_across_chains",
   "run_status": "partial",
   "source_errors": [
@@ -10,6 +10,12 @@
       "chain": "ethereum",
       "provider": "etherscan",
       "error": "ProviderError: Etherscan API error: Result window is too large, PageNo x Offset size must be less than or equal to 10000 None"
+    },
+    {
+      "token": "eurcv",
+      "chain": "xrpl",
+      "provider": "xrpl",
+      "error": "ProviderError: XRPL account_lines error: InsufficientNetworkMode"
     },
     {
       "token": "usdcv",
@@ -32,15 +38,16 @@
         "holders": 13,
         "status": "fresh"
       },
-      "fresh_chain_count": 3,
-      "stale_chain_count": 0,
+      "fresh_chain_count": 2,
+      "stale_chain_count": 1,
       "configured_chain_count": 4,
       "history_ready": false,
       "missing_chains": [
         "ethereum"
       ],
       "errors": {
-        "ethereum": "ProviderError: Etherscan API error: Result window is too large, PageNo x Offset size must be less than or equal to 10000 None"
+        "ethereum": "ProviderError: Etherscan API error: Result window is too large, PageNo x Offset size must be less than or equal to 10000 None",
+        "xrpl": "ProviderError: XRPL account_lines error: InsufficientNetworkMode"
       },
       "chains": {
         "solana": {
@@ -49,7 +56,7 @@
           "holders": 13,
           "source": "Solscan API Playground (Free tier)",
           "reference": "DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
-          "observed_at": "2026-08-01T21:05:15Z",
+          "observed_at": "2026-08-01T22:07:12Z",
           "status": "fresh",
           "details": {
             "method": "playground/token/meta",
@@ -63,7 +70,8 @@
           "source": "XRPL public JSON-RPC (XRPLCluster)",
           "reference": "rUNaS5sqRuxZz6V7rBGhoSaZiVYA3ut4UL:EURCV",
           "observed_at": "2026-08-01T21:05:15Z",
-          "status": "fresh",
+          "status": "stale",
+          "error": "ProviderError: XRPL account_lines error: InsufficientNetworkMode",
           "details": {
             "method": "account_lines",
             "ledger": "92FEA1BECC5883ADE64AD741C5AB3A9DCB83329614B543F50B67B50E2DA792EE",
@@ -77,7 +85,7 @@
           "holders": 4,
           "source": "Stellar Horizon (SDF mainnet)",
           "reference": "EURCV:GCEYGIVOLAVBF2TG2RUSGTUJCIN75KEX3NGLMY4VPL4GFE5L355AXW3G",
-          "observed_at": "2026-08-01T21:05:16Z",
+          "observed_at": "2026-08-01T22:07:13Z",
           "status": "fresh",
           "details": {
             "asset_method": "GET /assets",
@@ -122,7 +130,7 @@
           "holders": 13,
           "source": "Solscan API Playground (Free tier)",
           "reference": "8smindLdDuySY6i2bStQX9o8DVhALCXCMbNxD98unx35",
-          "observed_at": "2026-08-01T21:05:24Z",
+          "observed_at": "2026-08-01T22:07:22Z",
           "status": "fresh",
           "details": {
             "method": "playground/token/meta",
