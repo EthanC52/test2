@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "started_at": "2026-08-08T16:46:27Z",
-  "generated_at": "2026-08-08T16:46:49Z",
+  "started_at": "2026-08-08T17:39:29Z",
+  "generated_at": "2026-08-08T17:39:48Z",
   "holder_aggregation": "sum_across_chains",
   "run_status": "partial",
   "source_errors": [
@@ -49,7 +49,7 @@
           "holders": 13,
           "source": "Solscan API Playground (Free tier)",
           "reference": "DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
-          "observed_at": "2026-08-08T16:46:37Z",
+          "observed_at": "2026-08-08T17:39:38Z",
           "status": "fresh",
           "details": {
             "method": "playground/token/meta",
@@ -62,11 +62,11 @@
           "holders": 1,
           "source": "XRPL public JSON-RPC (XRPLCluster)",
           "reference": "rUNaS5sqRuxZz6V7rBGhoSaZiVYA3ut4UL:EURCV",
-          "observed_at": "2026-08-08T16:46:38Z",
+          "observed_at": "2026-08-08T17:39:38Z",
           "status": "fresh",
           "details": {
             "method": "account_lines",
-            "ledger": "BE341377AF80E6F67F2213283FA32E763B4E936C9DFE9EB7576AB22DD7CDF383",
+            "ledger": "1694FA28B8EA92C56881FE9D4A3D52790EA2919778B0D2FFE42A4FF5EBA52F85",
             "pages": 1,
             "holder_rule": "issuer-side balance < 0"
           }
@@ -77,7 +77,7 @@
           "holders": 4,
           "source": "Stellar Horizon (SDF mainnet)",
           "reference": "EURCV:GCEYGIVOLAVBF2TG2RUSGTUJCIN75KEX3NGLMY4VPL4GFE5L355AXW3G",
-          "observed_at": "2026-08-08T16:46:38Z",
+          "observed_at": "2026-08-08T17:39:39Z",
           "status": "fresh",
           "details": {
             "asset_method": "GET /assets",
@@ -122,7 +122,7 @@
           "holders": 14,
           "source": "Solscan API Playground (Free tier)",
           "reference": "8smindLdDuySY6i2bStQX9o8DVhALCXCMbNxD98unx35",
-          "observed_at": "2026-08-08T16:46:49Z",
+          "observed_at": "2026-08-08T17:39:48Z",
           "status": "fresh",
           "details": {
             "method": "playground/token/meta",
