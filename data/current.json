@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "started_at": "2026-08-10T07:58:48Z",
-  "generated_at": "2026-08-10T07:59:04Z",
+  "started_at": "2026-08-10T09:43:12Z",
+  "generated_at": "2026-08-10T09:43:31Z",
   "holder_aggregation": "sum_across_chains",
   "run_status": "partial",
   "source_errors": [
@@ -24,7 +24,7 @@
       "symbol": "EURCV",
       "currency": "EUR",
       "status": "partial",
-      "supply": "26100099.81",
+      "supply": "26100212.43",
       "holders": 19,
       "largest_holder_chain": {
         "id": "solana",
@@ -45,11 +45,11 @@
       "chains": {
         "solana": {
           "label": "Solana",
-          "supply": "1069499.81",
+          "supply": "1069612.43",
           "holders": 14,
           "source": "Solscan API Playground (Free tier)",
           "reference": "DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
-          "observed_at": "2026-08-10T07:58:56Z",
+          "observed_at": "2026-08-10T09:43:22Z",
           "status": "fresh",
           "details": {
             "method": "playground/token/meta",
@@ -62,11 +62,11 @@
           "holders": 1,
           "source": "XRPL public JSON-RPC (XRPLCluster)",
           "reference": "rUNaS5sqRuxZz6V7rBGhoSaZiVYA3ut4UL:EURCV",
-          "observed_at": "2026-08-10T07:58:56Z",
+          "observed_at": "2026-08-10T09:43:22Z",
           "status": "fresh",
           "details": {
             "method": "account_lines",
-            "ledger": "2CBD755B0C1C9C1183B5C4A2BFBFC87894F3F66C2CF517D3E4C3E1D63A44AD3D",
+            "ledger": "2DB050E2EEE2C445E7D3A91D9AC041A3C5174CF872C7B9607105804EA3D5826F",
             "pages": 1,
             "holder_rule": "issuer-side balance < 0"
           }
@@ -77,7 +77,7 @@
           "holders": 4,
           "source": "Stellar Horizon (SDF mainnet)",
           "reference": "EURCV:GCEYGIVOLAVBF2TG2RUSGTUJCIN75KEX3NGLMY4VPL4GFE5L355AXW3G",
-          "observed_at": "2026-08-10T07:58:57Z",
+          "observed_at": "2026-08-10T09:43:23Z",
           "status": "fresh",
           "details": {
             "asset_method": "GET /assets",
@@ -97,12 +97,12 @@
       "symbol": "USDCV",
       "currency": "USD",
       "status": "partial",
-      "supply": "1989390",
-      "holders": 14,
+      "supply": "1989380",
+      "holders": 13,
       "largest_holder_chain": {
         "id": "solana",
         "label": "Solana",
-        "holders": 14,
+        "holders": 13,
         "status": "fresh"
       },
       "fresh_chain_count": 1,
@@ -118,11 +118,11 @@
       "chains": {
         "solana": {
           "label": "Solana",
-          "supply": "1989390",
-          "holders": 14,
+          "supply": "1989380",
+          "holders": 13,
           "source": "Solscan API Playground (Free tier)",
           "reference": "8smindLdDuySY6i2bStQX9o8DVhALCXCMbNxD98unx35",
-          "observed_at": "2026-08-10T07:59:04Z",
+          "observed_at": "2026-08-10T09:43:31Z",
           "status": "fresh",
           "details": {
             "method": "playground/token/meta",
