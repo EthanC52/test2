@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "started_at": "2026-08-28T21:29:39Z",
-  "generated_at": "2026-08-28T21:30:01Z",
+  "started_at": "2026-08-29T03:19:26Z",
+  "generated_at": "2026-08-29T03:19:44Z",
   "holder_aggregation": "sum_across_chains",
   "run_status": "partial",
   "source_errors": [
@@ -24,7 +24,7 @@
       "symbol": "EURCV",
       "currency": "EUR",
       "status": "partial",
-      "supply": "27509284.71",
+      "supply": "27512130.62",
       "holders": 22,
       "largest_holder_chain": {
         "id": "solana",
@@ -45,11 +45,11 @@
       "chains": {
         "solana": {
           "label": "Solana",
-          "supply": "2478684.71",
+          "supply": "2481530.62",
           "holders": 17,
           "source": "Solscan API Playground (Free tier)",
           "reference": "DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
-          "observed_at": "2026-08-28T21:29:50Z",
+          "observed_at": "2026-08-29T03:19:35Z",
           "status": "fresh",
           "details": {
             "method": "playground/token/meta",
@@ -62,11 +62,11 @@
           "holders": 1,
           "source": "XRPL public JSON-RPC (XRPLCluster)",
           "reference": "rUNaS5sqRuxZz6V7rBGhoSaZiVYA3ut4UL:EURCV",
-          "observed_at": "2026-08-28T21:29:50Z",
+          "observed_at": "2026-08-29T03:19:36Z",
           "status": "fresh",
           "details": {
             "method": "account_lines",
-            "ledger": "A9526E6DF8DDDD4BF20C444E06A0B542A7A690E0169F4D97723FCD0BC0FD4956",
+            "ledger": "FFAFC58FD40BDA4314958FEF90464E0C4EDA764756E671452065943DCFF0FCBA",
             "pages": 1,
             "holder_rule": "issuer-side balance < 0"
           }
@@ -77,7 +77,7 @@
           "holders": 4,
           "source": "Stellar Horizon (SDF mainnet)",
           "reference": "EURCV:GCEYGIVOLAVBF2TG2RUSGTUJCIN75KEX3NGLMY4VPL4GFE5L355AXW3G",
-          "observed_at": "2026-08-28T21:29:51Z",
+          "observed_at": "2026-08-29T03:19:36Z",
           "status": "fresh",
           "details": {
             "asset_method": "GET /assets",
@@ -122,7 +122,7 @@
           "holders": 13,
           "source": "Solscan API Playground (Free tier)",
           "reference": "8smindLdDuySY6i2bStQX9o8DVhALCXCMbNxD98unx35",
-          "observed_at": "2026-08-28T21:30:01Z",
+          "observed_at": "2026-08-29T03:19:44Z",
           "status": "fresh",
           "details": {
             "method": "playground/token/meta",
