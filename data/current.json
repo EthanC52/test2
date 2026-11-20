@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "started_at": "2026-11-20T16:01:47Z",
-  "generated_at": "2026-11-20T16:02:03Z",
+  "started_at": "2026-11-20T22:36:53Z",
+  "generated_at": "2026-11-20T22:37:11Z",
   "holder_aggregation": "sum_across_chains",
   "run_status": "partial",
   "source_errors": [
@@ -24,12 +24,12 @@
       "symbol": "EURCV",
       "currency": "EUR",
       "status": "partial",
-      "supply": "26978074.15",
-      "holders": 34,
+      "supply": "27113331.25",
+      "holders": 33,
       "largest_holder_chain": {
         "id": "solana",
         "label": "Solana",
-        "holders": 29,
+        "holders": 28,
         "status": "fresh"
       },
       "fresh_chain_count": 3,
@@ -45,11 +45,11 @@
       "chains": {
         "solana": {
           "label": "Solana",
-          "supply": "1947474.15",
-          "holders": 29,
+          "supply": "2082731.25",
+          "holders": 28,
           "source": "Solscan API Playground (Free tier)",
           "reference": "DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
-          "observed_at": "2026-11-20T16:01:55Z",
+          "observed_at": "2026-11-20T22:37:02Z",
           "status": "fresh",
           "details": {
             "method": "playground/token/meta",
@@ -62,11 +62,11 @@
           "holders": 1,
           "source": "XRPL public JSON-RPC (XRPLCluster)",
           "reference": "rUNaS5sqRuxZz6V7rBGhoSaZiVYA3ut4UL:EURCV",
-          "observed_at": "2026-11-20T16:01:55Z",
+          "observed_at": "2026-11-20T22:37:02Z",
           "status": "fresh",
           "details": {
             "method": "account_lines",
-            "ledger": "7307B7055BFA0FE6C9C46D275A9F09746B9FE727D8030DAAB16FCAB2DF715AFC",
+            "ledger": "A696E83AA4E47C768752F0A92913B300291639021C6E414660AFDAE3E5F3CAF2",
             "pages": 1,
             "holder_rule": "issuer-side balance < 0"
           }
@@ -77,7 +77,7 @@
           "holders": 4,
           "source": "Stellar Horizon (SDF mainnet)",
           "reference": "EURCV:GCEYGIVOLAVBF2TG2RUSGTUJCIN75KEX3NGLMY4VPL4GFE5L355AXW3G",
-          "observed_at": "2026-11-20T16:01:56Z",
+          "observed_at": "2026-11-20T22:37:02Z",
           "status": "fresh",
           "details": {
             "asset_method": "GET /assets",
@@ -122,7 +122,7 @@
           "holders": 13,
           "source": "Solscan API Playground (Free tier)",
           "reference": "8smindLdDuySY6i2bStQX9o8DVhALCXCMbNxD98unx35",
-          "observed_at": "2026-11-20T16:02:03Z",
+          "observed_at": "2026-11-20T22:37:11Z",
           "status": "fresh",
           "details": {
             "method": "playground/token/meta",
